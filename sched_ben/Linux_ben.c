@@ -41,6 +41,7 @@ static struct dummy_thd     thd[MAX_LEN];
 static struct sched_bitmap  runqueue;
 static struct sched_bitmap *rq;
 static struct fprr_bitmap   fprr;
+static unsigned long long curr_offset;
 
 unsigned long long ro[test_len];
 unsigned long long io[test_len];
@@ -242,7 +243,6 @@ __find_first_bit(unsigned long bitmap)
 void
 bitmap_update_offset()
 {
-	unsigned long long curr_offset = current_offset();
 	unsigned long long now_offset;
 
 	for (now_offset = rq->now_quantized; now_offset < curr_offset; now_offset++) {
@@ -284,10 +284,10 @@ bitmap_sched(void)
 	unsigned int rotation;
 	unsigned long long e, s;
 
-	s = ben_tsc();
+	//s = ben_tsc();
 	bitmap_update_offset();
-	e = ben_tsc();
-	printf("##: %llu\n", e-s);
+	//e = ben_tsc();
+	//printf("##: %llu\n", e-s);
 	rotation = rq->now_quantized % WINDOW_SZ;
 	first_lvl1 = first_bit_lvl1(rq->lvl1[0], rotation/LVL2_BITMAP_SZ);
 	first_lvl2 = __builtin_ctzl(rq->lvl2[first_lvl1]);
@@ -376,6 +376,7 @@ bitmap_ben(void)
 	}
 
 	for (i = 0; i < test_len; i++) {
+		curr_offset = rq->now_quantized + MIN_PERIOD;
 		pos = bitmap_sched();
 		temp = ps_list_head_first_d(&rq->r[pos], struct dummy_thd);
 		
