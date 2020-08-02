@@ -282,7 +282,7 @@ bitmap_sched(void)
 {
 	unsigned int first_lvl1, first_lvl2, pos;
 	unsigned int rotation;
-	unsigned long long e, s;
+	//unsigned long long e, s;
 
 	//s = ben_tsc();
 	bitmap_update_offset();
@@ -463,7 +463,7 @@ clear_res()
 int main (int argc, char* argv[])
 {
 	init();
-	NUM_THD = atoi(argv[1]);
+	NUM_THD = atoi(argv[2]);
 	char filename[20];
 	FILE *fp;
 
