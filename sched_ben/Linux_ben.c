@@ -148,6 +148,7 @@ fprr_insert(unsigned int pos, struct dummy_thd *thd)
 	//ps_list_rem_d(thd);
 	ps_list_head_append_d(&fprr.r[pos], thd);
 	assert(!ps_list_head_empty(&fprr.r[pos]));
+	printf(".");
 }
 
 static inline void
@@ -182,7 +183,7 @@ fprr_ben(void)
 
 		fprr_insert(thd[i].prio_idx, &thd[i]);
 	}
-
+	printf("fill the list\n");
 	for (i = 0; i < test_len; i++) {
 		pos = fprr_sched();
 		t = ps_list_head_first_d(&fprr.r[pos], struct dummy_thd);
