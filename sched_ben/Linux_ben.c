@@ -15,54 +15,57 @@
 #define WINDOW_SZ            1024
 #define MIN_PERIOD           (500 * 2700)
 
+typedef u64_t unsigned long long;
+typedef u32_t unsigned int
+
 int NUM_THD = 0;
 struct dummy_thd {
-	unsigned long long deadline;
+	u64_t              deadline;
 	int                prio_idx;
 	struct ps_list     list;
 } CHACHE_ALIGNED;
 
 struct sched_bitmap {
-	unsigned long long  now_quantized;
-	unsigned long       lvl1[LVL1_BITMAP_SZ];
-	unsigned long       lvl2[LVL2_BITMAP_SZ];
+	u64_t               now_quantized;
+	u32_t               lvl1[LVL1_BITMAP_SZ];
+	u32_t               lvl2[LVL2_BITMAP_SZ];
 	struct ps_list_head r[WINDOW_SZ];
-} __attribute__((aligned(64)));
+} /*__attribute__((aligned(64)))*/;
 
 struct fprr_bitmap {
-	unsigned long       lvl1[LVL1_BITMAP_SZ];
-	unsigned long       lvl2[LVL2_BITMAP_SZ];
+	u32_t               lvl1[LVL1_BITMAP_SZ];
+	u32_t               lvl2[LVL2_BITMAP_SZ];
 	struct ps_list_head r[WINDOW_SZ];
-} __attribute__((aligned(64)));
+} /*__attribute__((aligned(64)))*/;
 
-static unsigned long long   deadline[RAND_SZ];
+static u64_t                deadline[RAND_SZ];
 static int                  prio[32];
 static struct dummy_thd     thd[MAX_LEN];
 static struct sched_bitmap  runqueue;
 static struct sched_bitmap *rq;
 static struct fprr_bitmap   fprr;
-static unsigned long long curr_offset;
+static u64_t                curr_offset;
 
-unsigned long long ro[test_len];
-unsigned long long io[test_len];
+u64_t ro[test_len];
+u64_t io[test_len];
 
 struct mynode mn[MAX_LEN];
-static unsigned long long flush_array[204800];
+static u64_t flush_array[204800];
 
 struct rb_root mytree = RB_ROOT;
 
 static inline void
 flush_cache(void)
 {
-	unsigned long long i = 0;
+	u64_t i = 0;
 
-	while (i < (unsigned long long)204800) {
+	while (i < (u64_t)204800) {
 		flush_array[i] = 0;
-		i = i+ (unsigned long long)1;
+		i = i+ (u64_t)1;
 	}
 }
 
-static inline unsigned long long
+static inline u64_t
 ben_tsc(void)
 {
 	//unsigned long a, d, c;
@@ -71,7 +74,7 @@ ben_tsc(void)
 
 	//return ((unsigned long long)d << 32) | (unsigned long long)a;
 
-	unsigned long long a;
+	u64_t a;
 	__asm__ __volatile__("rdtsc":"=a" (a));
 
 	return a;
@@ -84,7 +87,7 @@ gen_rand(void)
 
 	for (i = 0; i < RAND_SZ; i++) {
 		temp = random() % 10000;
-		deadline[i] = (unsigned long long)temp * (unsigned long long)27;
+		deadline[i] = (u64_t)temp * (u64_t)27;
 	}
 
 	for (i = 0; i < 32; i++) {
@@ -97,7 +100,7 @@ init(void)
 {
 	int i = 0;
 
-	memset(deadline, 0, sizeof(unsigned long long) * RAND_SZ);
+	memset(deadline, 0, sizeof(u64_t) * RAND_SZ);
 	memset(prio, 0, sizeof(int)*32);
 	memset(thd, 0, sizeof(struct dummy_thd) * NUM_THD);
 	memset(&runqueue, 0, sizeof(struct sched_bitmap));
@@ -130,9 +133,9 @@ fprr_sched(void)
 {
 	unsigned int first_lvl1, first_lvl2, pos;
 
-	first_lvl1 = __builtin_ctzl(fprr.lvl1[0]);
-	printf("ctzl success\n");
-	first_lvl2 = __builtin_ctzl(fprr.lvl2[first_lvl1]);
+	first_lvl1 = __builtin_ctz(fprr.lvl1[0]);
+	printf("ctz success\n");
+	first_lvl2 = __builtin_ctz(fprr.lvl2[first_lvl1]);
 	pos = (first_lvl1 * LVL2_BITMAP_SZ) + first_lvl2;
 	assert(!ps_list_head_empty(&fprr.r[pos]));
 
@@ -175,7 +178,7 @@ fprr_ben(void)
 {
 	int i = 0;
 	unsigned int pos = 0;
-	unsigned long long e, s;
+	u64_t e, s;
 	struct dummy_thd *t;
 
 	for (i = 0; i < NUM_THD; i++) {
@@ -214,22 +217,22 @@ current_offset(void)
 	return ben_tsc() / DEADLINE_QUANTUM_LEN;
 }*/
 
-static inline unsigned long
-rotr32(unsigned long value, unsigned int rotation)
+static inline u32_t
+rotr32(u32_t value, unsigned int rotation)
 {
 	return value >> rotation | value << (32 - rotation);
 }
 
 static inline unsigned int
-first_bit_lvl1(unsigned long lvl1, unsigned int rotation)
+first_bit_lvl1(u32_t lvl1, unsigned int rotation)
 {
-	unsigned long rotated;
+	u32_t rotated;
 	unsigned int ret = 0;
 
 	assert(rotation < 32);
 	rotated = rotr32(lvl1, rotation);
 
-	ret = __builtin_ctzl(rotated);
+	ret = __builtin_ctz(rotated);
 	if (ret < (LVL2_BITMAP_SZ - rotation))
 		ret += rotation;
 	else
@@ -239,19 +242,19 @@ first_bit_lvl1(unsigned long lvl1, unsigned int rotation)
 }
 
 static inline int
-__find_first_bit(unsigned long bitmap)
+__find_first_bit(u32_t bitmap)
 {
-	return __builtin_ctzl(bitmap);
+	return __builtin_ctz(bitmap);
 }
 
 void
 bitmap_update_offset()
 {
-	unsigned long long now_offset;
+	u64_t now_offset;
 
 	for (now_offset = rq->now_quantized; now_offset < curr_offset; now_offset++) {
-		unsigned long now = now_offset % WINDOW_SZ;
-		unsigned long next = (now_offset + 1) % WINDOW_SZ;
+		u32_t now = now_offset % WINDOW_SZ;
+		u32_t next = (now_offset + 1) % WINDOW_SZ;
 
 /*		if (rq->l[now] != 0) {
 			assert(rq->l[now] != 0);
@@ -279,7 +282,7 @@ bitmap_update_offset()
 	rq->now_quantized = curr_offset;
 }
 
-unsigned long long b_g;
+u64_t b_g;
 
 static inline unsigned int
 bitmap_sched(void)
@@ -294,7 +297,7 @@ bitmap_sched(void)
 	//printf("##: %llu\n", e-s);
 	rotation = rq->now_quantized % WINDOW_SZ;
 	first_lvl1 = first_bit_lvl1(rq->lvl1[0], rotation/LVL2_BITMAP_SZ);
-	first_lvl2 = __builtin_ctzl(rq->lvl2[first_lvl1]);
+	first_lvl2 = __builtin_ctz(rq->lvl2[first_lvl1]);
 	pos = (first_lvl1 * LVL2_BITMAP_SZ) + first_lvl2;
 	//assert(rq->l[pos] != 0);
 	//printf("pos: %d\n", pos);
@@ -366,7 +369,7 @@ bitmap_ben(void)
 {
 	int i = 0;
 	unsigned int pos = 0;
-	unsigned long long s, e;
+	u64_t s, e;
 	struct dummy_thd *temp;
 	//unsigned long long u = 0, p = 0, a = 0;
 
@@ -402,7 +405,7 @@ bitmap_ben(void)
 	}
 }
 
-extern struct mynode* my_search(struct rb_root *root, unsigned long long deadline);
+extern struct mynode* my_search(struct rb_root *root, u64_t deadline);
 extern int my_insert(struct rb_root *root, struct mynode *data);
 extern struct mynode* my_min(struct rb_root *root);
 
@@ -410,7 +413,7 @@ static inline void
 rbtree_ben(void)
 {
 	int i = 0, ret;
-	unsigned long long s, e;
+	u64_t s, e;
 	struct mynode *data, *tmp1, *tmp2;
 	struct mynode *tst[NUM_THD];
 
@@ -460,8 +463,8 @@ rbtree_ben(void)
 static inline void
 clear_res()
 {
-	memset(&ro, 0, sizeof(unsigned long long)*test_len);
-	memset(&io, 0, sizeof(unsigned long long)*test_len);
+	memset(&ro, 0, sizeof(u64_t)*test_len);
+	memset(&io, 0, sizeof(u64_t)*test_len);
 }
 
 int main (int argc, char* argv[])
