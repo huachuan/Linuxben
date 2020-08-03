@@ -15,8 +15,9 @@
 #define WINDOW_SZ            1024
 #define MIN_PERIOD           (500 * 2700)
 
-typedef unsigned long long u64_t;
-typedef unsigned int       u32_t;
+//typedef unsigned long long u64_t;
+//typedef unsigned int       u32_t;
+#define u64_t unsigned long long;
 
 int NUM_THD = 0;
 struct dummy_thd {

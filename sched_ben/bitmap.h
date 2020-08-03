@@ -1,4 +1,4 @@
-#define u32_t unsigned long
+#define u32_t unsigned int
 #define WORD_SIZE 32
 
 /* Many of these taken from aggregate.org/MAGIC */
