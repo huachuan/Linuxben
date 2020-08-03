@@ -131,6 +131,7 @@ fprr_sched(void)
 	unsigned int first_lvl1, first_lvl2, pos;
 
 	first_lvl1 = __builtin_ctzl(fprr.lvl1[0]);
+	printf("ctzl success\n");
 	first_lvl2 = __builtin_ctzl(fprr.lvl2[first_lvl1]);
 	pos = (first_lvl1 * LVL2_BITMAP_SZ) + first_lvl2;
 	assert(!ps_list_head_empty(&fprr.r[pos]));
@@ -186,6 +187,7 @@ fprr_ben(void)
 	printf("fill the list\n");
 	for (i = 0; i < test_len; i++) {
 		pos = fprr_sched();
+		printf("sched done\n");
 		t = ps_list_head_first_d(&fprr.r[pos], struct dummy_thd);
 		assert(!ps_list_head_empty(&fprr.r[pos]));
 
