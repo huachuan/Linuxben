@@ -17,7 +17,7 @@
 
 //typedef unsigned long long u64_t;
 //typedef unsigned int       u32_t;
-#define u64_t unsigned long long;
+#define u64_t unsigned long long
 
 int NUM_THD = 0;
 struct dummy_thd {
