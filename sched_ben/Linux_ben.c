@@ -192,7 +192,9 @@ fprr_ben(void)
 		assert(!ps_list_head_empty(&fprr.r[pos]));
 
 		flush_cache();
+		printf("flush done\n");
 		s = ben_tsc();
+		printf("rdtsc done\n");
 		fprr_remove(pos, t);
 		e = ben_tsc();
 		ro[i] = (e-s);
