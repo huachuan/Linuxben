@@ -198,7 +198,6 @@ fprr_ben(void)
 		fprr_remove(pos, t);
 		e = ben_tsc();
 		ro[i] = (e-s);
-		printf("remove done\n");
 		t->prio_idx = prio[i%32];
 
 		flush_cache();
