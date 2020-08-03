@@ -183,7 +183,8 @@ fprr_ben(void)
 	struct dummy_thd *t;
 
 	for (i = 0; i < NUM_THD; i++) {
-		thd[i].prio_idx = prio[i%32];
+		//thd[i].prio_idx = prio[i%32];
+		thd[i].prio_idx = i%32;
 		assert(thd[i].prio_idx < 32);
 
 		fprr_insert(thd[i].prio_idx, &thd[i]);
@@ -192,8 +193,9 @@ fprr_ben(void)
 	for (i = 0; i < test_len; i++) {
 		pos = fprr_sched();
 		printf("sched done\n");
-		//t = ps_list_head_first_d(&fprr.r[pos], struct dummy_thd);
-		//assert(!ps_list_head_empty(&fprr.r[pos]));
+		t = ps_list_head_first_d(&fprr.r[pos], struct dummy_thd);
+		printf("origin: %p, head: %p\n", &thd[1], t);
+		assert(!ps_list_head_empty(&fprr.r[pos]));
 
 		flush_cache();
 		//printf("flush done\n");
@@ -202,11 +204,11 @@ fprr_ben(void)
 		fprr_remove(pos, t);
 		e = ben_tsc();
 		ro[i] = (e-s);
-		//t->prio_idx = prio[i%32];
+		t->prio_idx = prio[i%32];
 
 		flush_cache();
 		s = ben_tsc();
-		//fprr_insert(pos, t);
+		fprr_insert(pos, t);
 		e = ben_tsc();
 		io[i] = (e-s);
 	}
