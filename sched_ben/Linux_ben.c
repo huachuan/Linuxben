@@ -148,7 +148,7 @@ fprr_insert(unsigned int pos, struct dummy_thd *thd)
 	printf("bitmap set success\n");
 	//ps_list_rem_d(thd);
 	ps_list_head_append_d(&fprr.r[pos], thd);
-	printf("bitmap append success\n")
+	printf("bitmap append success\n");
 	assert(!ps_list_head_empty(&fprr.r[pos]));
 }
 
