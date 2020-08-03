@@ -182,7 +182,7 @@ fprr_ben(void)
 	u64_t e, s;
 	struct dummy_thd *t;
 
-	for (i = 0; i < NUM_THD; i++) {
+	for (i = 0; i < 32; i++) {
 		//thd[i].prio_idx = prio[i%32];
 		thd[i].prio_idx = i%32;
 		assert(thd[i].prio_idx < 32);
@@ -192,9 +192,9 @@ fprr_ben(void)
 	printf("fill the list\n");
 	for (i = 0; i < test_len; i++) {
 		pos = fprr_sched();
-		printf("sched done\n");
+		printf("sched done: %d\n", pos);
 		t = ps_list_head_first_d(&fprr.r[pos], struct dummy_thd);
-		printf("origin: %p, head: %p\n", &thd[1], t);
+		printf("origin: %p, head: %p\n", &thd[0], t);
 		assert(!ps_list_head_empty(&fprr.r[pos]));
 
 		flush_cache();
@@ -211,6 +211,7 @@ fprr_ben(void)
 		fprr_insert(pos, t);
 		e = ben_tsc();
 		io[i] = (e-s);
+		assert(0);
 	}
 }
 
