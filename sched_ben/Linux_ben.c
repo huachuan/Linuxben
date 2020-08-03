@@ -145,8 +145,10 @@ fprr_insert(unsigned int pos, struct dummy_thd *thd)
 
 	bitmap_set(fprr.lvl2, pos);
 	bitmap_set(fprr.lvl1, pos/LVL2_BITMAP_SZ);
+	printf("bitmap set success\n");
 	//ps_list_rem_d(thd);
 	ps_list_head_append_d(&fprr.r[pos], thd);
+	printf("bitmap append success\n")
 	assert(!ps_list_head_empty(&fprr.r[pos]));
 }
 
@@ -476,6 +478,7 @@ int main (int argc, char* argv[])
 	//if (strcmp(argv[1], "fprr") == 0) {
 		printf("benchmark for fprr\n");
 		clear_res();
+		printf("clear done\n");
 		fprr_ben();
 		output(fp, "fprr");
 	/*} else if (strcmp(argv[1], "rbtree") == 0) {
