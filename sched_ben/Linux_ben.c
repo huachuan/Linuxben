@@ -194,11 +194,11 @@ fprr_ben(void)
 		flush_cache();
 		//printf("flush done\n");
 		s = ben_tsc();
-		printf("rdtsc done\n");
+		//printf("rdtsc done\n");
 		fprr_remove(pos, t);
 		e = ben_tsc();
 		ro[i] = (e-s);
-
+		printf("remove done\n");
 		t->prio_idx = prio[i%32];
 
 		flush_cache();
