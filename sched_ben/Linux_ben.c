@@ -145,10 +145,8 @@ fprr_insert(unsigned int pos, struct dummy_thd *thd)
 
 	bitmap_set(fprr.lvl2, pos);
 	bitmap_set(fprr.lvl1, pos/LVL2_BITMAP_SZ);
-	printf("bitmap set success\n");
 	//ps_list_rem_d(thd);
 	ps_list_head_append_d(&fprr.r[pos], thd);
-	printf("bitmap append success\n");
 	assert(!ps_list_head_empty(&fprr.r[pos]));
 }
 
@@ -467,7 +465,7 @@ int main (int argc, char* argv[])
 	init();
 	//NUM_THD = atoi(argv[2]);
 	NUM_THD = 100;
-	char filename[20];
+	char filename[20] = "test.log";
 	FILE *fp;
 
 	//sprintf(filename, "logs/%s%d.log", argv[1], NUM_THD);
