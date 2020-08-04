@@ -69,16 +69,16 @@ flush_cache(void)
 static inline u64_t
 ben_tsc(void)
 {
-	//unsigned long a, d, c;
+	unsigned long a, d, c;
 
-	//__asm__ __volatile__("rdtsc" : "=a" (a), "=d" (d), "=c" (c) : : );
+	__asm__ __volatile__("rdtsc" : "=a" (a), "=d" (d), "=c" (c) : : );
 
-	//return ((unsigned long long)d << 32) | (unsigned long long)a;
+	return ((unsigned long long)d << 32) | (unsigned long long)a;
 
-	u64_t a;
-	__asm__ __volatile__("rdtsc":"=a" (a));
+	//u64_t a;
+	//__asm__ __volatile__("rdtsc":"=a" (a));
 
-	return a;
+	//return a;
 }
 
 static void
@@ -135,7 +135,6 @@ fprr_sched(void)
 	unsigned int first_lvl1, first_lvl2, pos;
 
 	first_lvl1 = __builtin_ctz(fprr.lvl1[0]);
-	printf("ctz success\n");
 	first_lvl2 = __builtin_ctz(fprr.lvl2[first_lvl1]);
 	pos = (first_lvl1 * LVL2_BITMAP_SZ) + first_lvl2;
 	assert(!ps_list_head_empty(&fprr.r[pos]));
@@ -153,7 +152,7 @@ fprr_insert(unsigned int pos, struct dummy_thd *thd)
 	//ps_list_rem_d(thd);
 	ps_list_head_append_d(&fprr.r[pos], thd);
 	assert(!ps_list_head_empty(&fprr.r[pos]));
-	printf(".");
+	//printf(".");
 }
 
 static inline void
@@ -182,9 +181,8 @@ fprr_ben(void)
 	u64_t e, s;
 	struct dummy_thd *t;
 
-	for (i = 0; i < 32; i++) {
-		//thd[i].prio_idx = prio[i%32];
-		thd[i].prio_idx = i%32;
+	for (i = 0; i < NUM_THD; i++) {
+		thd[i].prio_idx = prio[i%32];
 		assert(thd[i].prio_idx < 32);
 
 		fprr_insert(thd[i].prio_idx, &thd[i]);
@@ -192,15 +190,11 @@ fprr_ben(void)
 	printf("fill the list\n");
 	for (i = 0; i < test_len; i++) {
 		pos = fprr_sched();
-		printf("sched done: %d\n", pos);
 		t = ps_list_head_first_d(&fprr.r[pos], struct dummy_thd);
-		printf("origin: %p, head: %p\n", &thd[0], t);
 		assert(!ps_list_head_empty(&fprr.r[pos]));
 
 		flush_cache();
-		//printf("flush done\n");
 		s = ben_tsc();
-		//printf("rdtsc done\n");
 		fprr_remove(pos, t);
 		e = ben_tsc();
 		ro[i] = (e-s);
@@ -208,10 +202,9 @@ fprr_ben(void)
 
 		flush_cache();
 		s = ben_tsc();
-		fprr_insert(pos, t);
+		fprr_insert(t->prio_idx, t);
 		e = ben_tsc();
 		io[i] = (e-s);
-		assert(0);
 	}
 }
 
