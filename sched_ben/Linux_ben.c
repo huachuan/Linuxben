@@ -40,7 +40,7 @@ struct fprr_bitmap {
 } /*__attribute__((aligned(64)))*/;
 
 static u64_t                deadline[RAND_SZ];
-static int                  prio[32];
+static int                  prio[WINDOW_SZ];
 static struct dummy_thd     thd[MAX_LEN];
 static struct sched_bitmap  runqueue;
 static struct sched_bitmap *rq;
@@ -74,11 +74,6 @@ ben_tsc(void)
 	__asm__ __volatile__("rdtsc" : "=a" (a), "=d" (d), "=c" (c) : : );
 
 	return ((unsigned long long)d << 32) | (unsigned long long)a;
-
-	//u64_t a;
-	//__asm__ __volatile__("rdtsc":"=a" (a));
-
-	//return a;
 }
 
 static void
@@ -91,8 +86,8 @@ gen_rand(void)
 		deadline[i] = (u64_t)temp * (u64_t)27;
 	}
 
-	for (i = 0; i < 32; i++) {
-		prio[i] = random() % 32;
+	for (i = 0; i < WINDOW_SZ; i++) {
+		prio[i] = random() % 1024;
 	}
 }
 
@@ -111,9 +106,6 @@ init(void)
 
 	for (i = 0; i < WINDOW_SZ; i++) {
 		ps_list_head_init(&rq->r[i]);
-	}
-
-	for (i = 0; i < 32; i++) {
 		ps_list_head_init(&fprr.r[i]);
 	}
 }
@@ -145,20 +137,19 @@ fprr_sched(void)
 static inline void
 fprr_insert(unsigned int pos, struct dummy_thd *thd)
 {
-	assert(pos < 32);
+	assert(pos < WINDOW_SZ);
 
 	bitmap_set(fprr.lvl2, pos);
 	bitmap_set(fprr.lvl1, pos/LVL2_BITMAP_SZ);
 	//ps_list_rem_d(thd);
 	ps_list_head_append_d(&fprr.r[pos], thd);
 	assert(!ps_list_head_empty(&fprr.r[pos]));
-	//printf(".");
 }
 
 static inline void
 fprr_remove(unsigned int pos, struct dummy_thd *thd)
 {
-	assert(pos < 32);
+	assert(pos < WINDOW_SZ);
 
 	ps_list_rem_d(thd);
 	if (ps_list_head_empty(&fprr.r[pos])) {
@@ -183,7 +174,7 @@ fprr_ben(void)
 
 	for (i = 0; i < NUM_THD; i++) {
 		thd[i].prio_idx = prio[i%32];
-		assert(thd[i].prio_idx < 32);
+		assert(thd[i].prio_idx < 1024);
 
 		fprr_insert(thd[i].prio_idx, &thd[i]);
 	}

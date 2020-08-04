@@ -30,7 +30,7 @@ with open(file, "r") as f:
             temp = int(line.split()[2].strip())
             fprr_io.append(temp)
 
-tail = int(1000*0.9)
+tail = int(1000*0.99)
 
 if len(rb_ro) > 0:
      print "rbtree res len:{};{}".format(len(rb_ro), len(rb_io))
