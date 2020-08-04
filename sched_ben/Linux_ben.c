@@ -458,23 +458,22 @@ clear_res()
 int main (int argc, char* argv[])
 {
 	init();
-	//NUM_THD = atoi(argv[2]);
-	NUM_THD = 100;
-	char filename[20] = "test.log";
+	NUM_THD = atoi(argv[2]);
+	char filename[20];
 	FILE *fp;
 
-	//sprintf(filename, "logs/%s%d.log", argv[1], NUM_THD);
+	sprintf(filename, "logs/%s%d.log", argv[1], NUM_THD);
 	fp = fopen(filename, "w");
 
 	printf("NUM_THD: %d\n", NUM_THD);
 	
-	//if (strcmp(argv[1], "fprr") == 0) {
+	if (strcmp(argv[1], "fprr") == 0) {
 		printf("benchmark for fprr\n");
 		clear_res();
 		printf("clear done\n");
 		fprr_ben();
 		output(fp, "fprr");
-	/*} else if (strcmp(argv[1], "rbtree") == 0) {
+	} else if (strcmp(argv[1], "rbtree") == 0) {
 		printf("\nbenchmark for rbtree\n");
 		clear_res();
 		rbtree_ben();
@@ -484,7 +483,7 @@ int main (int argc, char* argv[])
 		clear_res();
 		bitmap_ben();
 		output(fp, "bitmap");
-	}*/
+	}
 	fclose(fp);
 	return 0;
 }

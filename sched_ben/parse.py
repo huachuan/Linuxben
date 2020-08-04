@@ -40,8 +40,8 @@ if len(rb_ro) > 0:
      print "rbtree insert std:{}".format(np.std(rb_io, ddof=1))
      rb_ro.sort()
      rb_io.sort()
-     print "rbtree 90% remove overhead:{}".format(rb_ro[tail])
-     print "rbtree 90% insert overhead:{}".format(rb_io[tail])
+     print "rbtree 99% remove overhead:{}".format(rb_ro[tail])
+     print "rbtree 99% insert overhead:{}".format(rb_io[tail])
      print "-----------------------------------"
 
 if len(bm_ro) > 0:
@@ -52,8 +52,8 @@ if len(bm_ro) > 0:
      print "bitmap insert std:{}".format(np.std(bm_io, ddof=1))
      bm_ro.sort()
      bm_io.sort()
-     print "bitmap 90% remove overhead:{}".format(bm_ro[tail])
-     print "bitmap 90% insert overhead:{}".format(bm_io[tail])
+     print "bitmap 99% remove overhead:{}".format(bm_ro[tail])
+     print "bitmap 99% insert overhead:{}".format(bm_io[tail])
      print "-----------------------------------"
 
 if len(fprr_ro) > 0:
@@ -64,7 +64,7 @@ if len(fprr_ro) > 0:
      print "fprr insert std:{}".format(np.std(fprr_io, ddof=1))
      fprr_ro.sort()
      fprr_io.sort()
-     print "fprr 90% remove overhead:{}".format(fprr_ro[tail])
-     print "fprr 90% insert overhead:{}".format(fprr_io[tail])
+     print "fprr 99% remove overhead:{}".format(fprr_ro[tail])
+     print "fprr 99% insert overhead:{}".format(fprr_io[tail])
      print "-----------------------------------"
 
