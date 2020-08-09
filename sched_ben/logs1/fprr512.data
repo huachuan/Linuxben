@@ -1,0 +1,8 @@
+fprr res len:1000;1000
+fprr remove mean:23.582
+fprr insert mean:15.79
+fprr remove std:9.25607643394
+fprr insert std:1.99696967626
+fprr 99% remove overhead:60
+fprr 99% insert overhead:18
+-----------------------------------
