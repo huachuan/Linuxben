@@ -6,7 +6,7 @@
 #include "rbtree.h"
 #include "ps_list.h"
 
-#define MAX_LEN              1000
+#define MAX_LEN              1024
 #define RAND_SZ              1000
 #define test_len             1000
 #define LVL1_BITMAP_SZ       1
@@ -87,7 +87,8 @@ gen_rand(void)
 	}
 
 	for (i = 0; i < WINDOW_SZ; i++) {
-		prio[i] = random() % 1024;
+		prio[i] = random() % WINDOW_SZ;
+		assert(prio[i] < WINDOW_SZ);
 	}
 }
 
@@ -97,7 +98,7 @@ init(void)
 	int i = 0;
 
 	memset(deadline, 0, sizeof(u64_t) * RAND_SZ);
-	memset(prio, 0, sizeof(int)*32);
+	memset(prio, 0, sizeof(int)*WINDOW_SZ);
 	memset(thd, 0, sizeof(struct dummy_thd) * NUM_THD);
 	memset(&runqueue, 0, sizeof(struct sched_bitmap));
 	memset(&fprr, 0, sizeof(struct fprr_bitmap));
@@ -173,9 +174,8 @@ fprr_ben(void)
 	struct dummy_thd *t;
 
 	for (i = 0; i < NUM_THD; i++) {
-		thd[i].prio_idx = prio[i%32];
-		assert(thd[i].prio_idx < 1024);
-
+		thd[i].prio_idx = prio[i%1024];
+		assert(prio[i%1024] < 1024);
 		fprr_insert(thd[i].prio_idx, &thd[i]);
 	}
 	printf("fill the list\n");
@@ -189,7 +189,9 @@ fprr_ben(void)
 		fprr_remove(pos, t);
 		e = ben_tsc();
 		ro[i] = (e-s);
-		t->prio_idx = prio[i%32];
+
+		t->prio_idx = prio[i%1024];
+		assert(prio[i%1024] < 1024);
 
 		flush_cache();
 		s = ben_tsc();
