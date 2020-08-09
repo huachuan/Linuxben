@@ -5,7 +5,7 @@ do
 	mkdir logs
 	for sets in fprr bitmap  rbtree
 	do	
-		for thds in 10 100 1000
+		for thds in 64 128 256 512 1023
 		do	
 			cd ${cdir}
 			./linux_ben $sets $thds
@@ -13,7 +13,7 @@ do
 			python ../parse.py $sets$thds.log > $sets$thds.data
 			cat ${sets}$thds.data | tr -d 'a-z' >| $thds.data
 		done
-		paste -d: ${sets}10.data 100.data 1000.data >> output$num.data
+		paste -d: ${sets}64.data 128.data 256.data 512.data 1023.data >> output$num.data
 	done
 	cd ${cdir}
 	mv logs logs$num
