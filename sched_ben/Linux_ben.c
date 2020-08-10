@@ -47,8 +47,7 @@ static struct sched_bitmap *rq;
 static struct fprr_bitmap   fprr;
 static u64_t                curr_offset;
 
-u64_t ro[test_len];
-u64_t io[test_len];
+u64_t res[test_len];
 
 struct mynode mn[MAX_LEN];
 static u64_t flush_array[204800];
@@ -118,7 +117,7 @@ output(FILE *fp, char* head)
 
 	assert(fp != NULL);
 	for (i = 0; i < test_len; i++) {
-		fprintf(fp, "%s: %llu %llu\n", head, ro[i], io[i]);
+		fprintf(fp, "%s: %llu\n", head, res[i]);
 	}
 }
 
@@ -188,7 +187,7 @@ fprr_ben(void)
 		s = ben_tsc();
 		fprr_remove(pos, t);
 		e = ben_tsc();
-		ro[i] = (e-s);
+		res[i] = (e-s);
 
 		t->prio_idx = prio[i%1024];
 		assert(prio[i%1024] < 1024);
@@ -197,7 +196,7 @@ fprr_ben(void)
 		s = ben_tsc();
 		fprr_insert(t->prio_idx, t);
 		e = ben_tsc();
-		io[i] = (e-s);
+		res[i] += (e-s);
 	}
 }
 
@@ -381,8 +380,8 @@ bitmap_ben(void)
 		s = ben_tsc();
 		bitmap_remove(pos, temp);
 		e = ben_tsc();
-		assert(ro[i] == 0);
-		ro[i] = (e-s);
+		assert(res[i] == 0);
+		res[i] = (e-s);
 		
 		thd[i%NUM_THD].deadline = (i+1)*MIN_PERIOD + deadline[i%RAND_SZ];
 
@@ -390,8 +389,7 @@ bitmap_ben(void)
 		s = ben_tsc();
 		bitmap_insert(&thd[i%NUM_THD]);
 		e = ben_tsc();
-		assert(io[i] == 0);
-		io[i] = (e-s);
+		res[i] += (e-s);
 	}
 }
 
@@ -430,7 +428,8 @@ rbtree_ben(void)
 			e = ben_tsc();
 			free(data);
 		}
-		ro[i] = (e-s);
+		assert(res[i] == 0);
+		res[i] = (e-s);
 
 		tmp1 = (struct mynode *)malloc(sizeof(struct mynode));
 		tmp1->deadline = deadline[i%RAND_SZ] + MIN_PERIOD*(i+1);
@@ -439,7 +438,7 @@ rbtree_ben(void)
 		s = ben_tsc();
 		my_insert(&mytree, tmp1);
 		e = ben_tsc();
-		io[i] = (e-s);
+		res[i] += (e-s);
 		
 		tmp2 = my_search(&mytree, tmp1->deadline);
 		assert(tmp1 == tmp2);
@@ -453,8 +452,9 @@ rbtree_ben(void)
 static inline void
 clear_res()
 {
-	memset(&ro, 0, sizeof(u64_t)*test_len);
-	memset(&io, 0, sizeof(u64_t)*test_len);
+	memset(&res, 0, sizeof(u64_t)*test_len);
+	//memset(&ro, 0, sizeof(u64_t)*test_len);
+	//memset(&io, 0, sizeof(u64_t)*test_len);
 }
 
 int main (int argc, char* argv[])
