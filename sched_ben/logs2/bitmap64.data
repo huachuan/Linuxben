@@ -1,8 +1,5 @@
-bitmap res len:1000;1000
-bitmap remove mean:18.278
-bitmap insert mean:19.234
-bitmap remove std:11.8261817411
-bitmap insert std:5.25021988195
-bitmap 99% remove overhead:62
-bitmap 99% insert overhead:50
+bitmap res len:1000
+bitmap remove mean:78.142
+bitmap remove std:11.3168859634
+bitmap 99% remove overhead:104
 -----------------------------------

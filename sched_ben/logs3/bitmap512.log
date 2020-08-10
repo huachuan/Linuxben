@@ -1,1000 +1,1000 @@
-bitmap: 48 18
-bitmap: 14 22
-bitmap: 44 24
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 14
-bitmap: 14 16
-bitmap: 12 14
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 16 52
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 14
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 24
-bitmap: 12 50
-bitmap: 14 22
-bitmap: 12 16
-bitmap: 14 24
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 14 48
-bitmap: 14 20
-bitmap: 12 18
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 48
-bitmap: 16 20
-bitmap: 14 14
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 16 52
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 16 16
-bitmap: 16 22
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 12 18
-bitmap: 18 20
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 12 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 14 14
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 12 18
-bitmap: 16 20
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 22
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 14
-bitmap: 14 16
-bitmap: 16 52
-bitmap: 16 18
-bitmap: 20 18
-bitmap: 12 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 12 20
-bitmap: 16 18
-bitmap: 16 22
-bitmap: 14 26
-bitmap: 16 20
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 18 18
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 18 20
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 24
-bitmap: 12 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 12 24
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 18 20
-bitmap: 12 18
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 18 22
-bitmap: 16 18
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 12 22
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 22
-bitmap: 14 22
-bitmap: 16 14
-bitmap: 12 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 12 20
-bitmap: 16 16
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 14 16
-bitmap: 12 20
-bitmap: 16 16
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 24
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 24
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 18 18
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 14 24
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 16 22
-bitmap: 16 40
-bitmap: 14 20
-bitmap: 18 20
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 12 18
-bitmap: 14 48
-bitmap: 14 20
-bitmap: 14 50
-bitmap: 16 18
-bitmap: 16 16
-bitmap: 14 12
-bitmap: 16 14
-bitmap: 16 18
-bitmap: 14 32
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 12 18
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 18 18
-bitmap: 14 24
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 18 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 12 22
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 18 18
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 14 24
-bitmap: 12 18
-bitmap: 14 22
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 12 20
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 18 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 12 20
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 12 22
-bitmap: 12 18
-bitmap: 14 24
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 16 22
-bitmap: 16 20
-bitmap: 14 22
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 12 22
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 14
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 14
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 18
-bitmap: 18 16
-bitmap: 16 14
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 18 18
-bitmap: 16 20
-bitmap: 12 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 20
-bitmap: 14 26
-bitmap: 16 20
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 12 20
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 12 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 12 22
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 12 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 12 22
-bitmap: 16 20
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 16 20
-bitmap: 16 20
-bitmap: 18 18
-bitmap: 12 20
-bitmap: 16 20
-bitmap: 16 50
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 18 22
-bitmap: 16 20
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 34
-bitmap: 14 16
-bitmap: 16 52
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 12 42
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 12 20
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 20 18
-bitmap: 14 20
-bitmap: 14 24
-bitmap: 14 18
-bitmap: 18 22
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 22
-bitmap: 16 16
-bitmap: 12 22
-bitmap: 12 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 14 36
-bitmap: 14 22
-bitmap: 12 14
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 50
-bitmap: 12 36
-bitmap: 16 20
-bitmap: 14 22
-bitmap: 16 20
-bitmap: 14 22
-bitmap: 36 20
-bitmap: 18 18
-bitmap: 14 40
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 16 22
-bitmap: 14 24
-bitmap: 14 22
-bitmap: 18 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 16 20
-bitmap: 12 22
-bitmap: 12 22
-bitmap: 48 26
-bitmap: 48 24
-bitmap: 58 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 16 20
-bitmap: 14 16
-bitmap: 16 14
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 64 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 16 16
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 18 18
-bitmap: 16 16
-bitmap: 64 18
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 18 22
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 14 50
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 18 18
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 60 20
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 18 18
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 16 16
-bitmap: 58 20
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 16 20
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 52
-bitmap: 66 22
-bitmap: 16 18
-bitmap: 14 14
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 26
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 34 20
-bitmap: 16 16
-bitmap: 18 22
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 64 20
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 14 52
-bitmap: 16 16
-bitmap: 18 16
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 12
-bitmap: 68 20
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 14
-bitmap: 16 14
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 58 20
-bitmap: 16 16
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 60 22
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 58 20
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 12 22
-bitmap: 14 18
-bitmap: 18 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 60 20
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 16 16
-bitmap: 18 20
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 62 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 14
-bitmap: 14 14
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 22
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 14 36
-bitmap: 18 18
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 60 22
-bitmap: 14 16
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 16 18
-bitmap: 12 18
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 14
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 60 22
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 16 18
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 58 22
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 12 16
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 60 22
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 14 22
-bitmap: 12 18
-bitmap: 16 22
-bitmap: 14 22
-bitmap: 60 22
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 16 16
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 18 18
-bitmap: 16 18
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 20 16
-bitmap: 66 20
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 16 16
-bitmap: 16 14
-bitmap: 14 18
-bitmap: 16 50
-bitmap: 14 18
-bitmap: 62 22
-bitmap: 16 18
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 14 14
-bitmap: 14 16
-bitmap: 64 20
-bitmap: 16 16
-bitmap: 16 16
-bitmap: 36 22
-bitmap: 16 18
-bitmap: 16 22
-bitmap: 16 52
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 18 16
-bitmap: 14 18
-bitmap: 14 14
-bitmap: 16 18
-bitmap: 16 20
-bitmap: 14 46
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 14
-bitmap: 16 18
-bitmap: 16 14
-bitmap: 16 18
-bitmap: 14 24
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 62 18
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 62 22
-bitmap: 16 18
-bitmap: 18 14
-bitmap: 16 18
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 14
-bitmap: 16 14
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 60 20
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 60 20
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 58 22
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 18 56
-bitmap: 16 16
-bitmap: 68 22
-bitmap: 12 14
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 22
-bitmap: 16 14
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 62 18
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 16 22
-bitmap: 14 18
-bitmap: 18 16
-bitmap: 18 18
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 16
-bitmap: 20 20
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 16 20
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 60 20
-bitmap: 16 18
-bitmap: 18 16
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 14 22
-bitmap: 12 18
-bitmap: 14 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 64 20
-bitmap: 14 18
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 14 18
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 58 20
-bitmap: 14 16
-bitmap: 12 18
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 16 16
-bitmap: 14 18
-bitmap: 14 22
-bitmap: 14 20
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 16 20
-bitmap: 16 18
-bitmap: 14 156
-bitmap: 16 22
-bitmap: 16 16
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 12 20
-bitmap: 14 22
-bitmap: 14 22
-bitmap: 62 18
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 16 20
-bitmap: 14 18
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 58 22
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 16 18
-bitmap: 16 16
-bitmap: 14 16
-bitmap: 14 16
-bitmap: 14 166
-bitmap: 14 18
-bitmap: 16 22
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 60 20
-bitmap: 16 18
-bitmap: 14 20
-bitmap: 14 22
-bitmap: 14 16
-bitmap: 14 20
-bitmap: 16 18
-bitmap: 16 18
-bitmap: 60 20
-bitmap: 16 16
-bitmap: 14 22
-bitmap: 12 16
-bitmap: 14 16
-bitmap: 14 18
-bitmap: 14 20
+bitmap: 94
+bitmap: 74
+bitmap: 70
+bitmap: 68
+bitmap: 70
+bitmap: 70
+bitmap: 70
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 64
+bitmap: 62
+bitmap: 60
+bitmap: 68
+bitmap: 68
+bitmap: 72
+bitmap: 70
+bitmap: 70
+bitmap: 68
+bitmap: 68
+bitmap: 62
+bitmap: 66
+bitmap: 70
+bitmap: 64
+bitmap: 62
+bitmap: 64
+bitmap: 66
+bitmap: 64
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 60
+bitmap: 64
+bitmap: 68
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 32
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 32
+bitmap: 68
+bitmap: 60
+bitmap: 70
+bitmap: 68
+bitmap: 66
+bitmap: 66
+bitmap: 66
+bitmap: 64
+bitmap: 70
+bitmap: 68
+bitmap: 70
+bitmap: 70
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 62
+bitmap: 70
+bitmap: 60
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 68
+bitmap: 70
+bitmap: 70
+bitmap: 72
+bitmap: 66
+bitmap: 66
+bitmap: 64
+bitmap: 30
+bitmap: 66
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 34
+bitmap: 66
+bitmap: 66
+bitmap: 66
+bitmap: 68
+bitmap: 70
+bitmap: 34
+bitmap: 76
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 62
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 64
+bitmap: 72
+bitmap: 72
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 34
+bitmap: 66
+bitmap: 74
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 62
+bitmap: 66
+bitmap: 64
+bitmap: 80
+bitmap: 72
+bitmap: 66
+bitmap: 68
+bitmap: 64
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 70
+bitmap: 62
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 72
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 64
+bitmap: 70
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 66
+bitmap: 70
+bitmap: 64
+bitmap: 66
+bitmap: 72
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 70
+bitmap: 68
+bitmap: 62
+bitmap: 64
+bitmap: 66
+bitmap: 66
+bitmap: 70
+bitmap: 64
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 62
+bitmap: 68
+bitmap: 64
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 70
+bitmap: 64
+bitmap: 66
+bitmap: 72
+bitmap: 36
+bitmap: 74
+bitmap: 70
+bitmap: 68
+bitmap: 64
+bitmap: 66
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 32
+bitmap: 70
+bitmap: 70
+bitmap: 66
+bitmap: 64
+bitmap: 66
+bitmap: 64
+bitmap: 68
+bitmap: 62
+bitmap: 70
+bitmap: 70
+bitmap: 62
+bitmap: 70
+bitmap: 68
+bitmap: 66
+bitmap: 70
+bitmap: 70
+bitmap: 72
+bitmap: 70
+bitmap: 36
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 74
+bitmap: 64
+bitmap: 70
+bitmap: 68
+bitmap: 72
+bitmap: 64
+bitmap: 70
+bitmap: 70
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 70
+bitmap: 66
+bitmap: 72
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 66
+bitmap: 62
+bitmap: 70
+bitmap: 74
+bitmap: 62
+bitmap: 64
+bitmap: 70
+bitmap: 30
+bitmap: 62
+bitmap: 68
+bitmap: 68
+bitmap: 66
+bitmap: 62
+bitmap: 64
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 70
+bitmap: 64
+bitmap: 62
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 68
+bitmap: 72
+bitmap: 64
+bitmap: 64
+bitmap: 68
+bitmap: 64
+bitmap: 68
+bitmap: 66
+bitmap: 62
+bitmap: 70
+bitmap: 68
+bitmap: 64
+bitmap: 62
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 76
+bitmap: 62
+bitmap: 70
+bitmap: 62
+bitmap: 62
+bitmap: 68
+bitmap: 30
+bitmap: 68
+bitmap: 74
+bitmap: 72
+bitmap: 68
+bitmap: 64
+bitmap: 62
+bitmap: 66
+bitmap: 66
+bitmap: 66
+bitmap: 70
+bitmap: 64
+bitmap: 68
+bitmap: 66
+bitmap: 72
+bitmap: 66
+bitmap: 70
+bitmap: 68
+bitmap: 72
+bitmap: 66
+bitmap: 66
+bitmap: 70
+bitmap: 72
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 72
+bitmap: 68
+bitmap: 64
+bitmap: 68
+bitmap: 66
+bitmap: 70
+bitmap: 62
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 66
+bitmap: 68
+bitmap: 70
+bitmap: 64
+bitmap: 64
+bitmap: 70
+bitmap: 64
+bitmap: 64
+bitmap: 66
+bitmap: 68
+bitmap: 72
+bitmap: 72
+bitmap: 64
+bitmap: 70
+bitmap: 68
+bitmap: 68
+bitmap: 64
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 70
+bitmap: 70
+bitmap: 62
+bitmap: 68
+bitmap: 68
+bitmap: 66
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 60
+bitmap: 66
+bitmap: 72
+bitmap: 64
+bitmap: 74
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 74
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 62
+bitmap: 70
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 66
+bitmap: 66
+bitmap: 70
+bitmap: 72
+bitmap: 66
+bitmap: 70
+bitmap: 72
+bitmap: 68
+bitmap: 72
+bitmap: 64
+bitmap: 66
+bitmap: 68
+bitmap: 70
+bitmap: 64
+bitmap: 72
+bitmap: 68
+bitmap: 72
+bitmap: 62
+bitmap: 68
+bitmap: 64
+bitmap: 70
+bitmap: 96
+bitmap: 68
+bitmap: 64
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 64
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 32
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 70
+bitmap: 68
+bitmap: 64
+bitmap: 72
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 70
+bitmap: 68
+bitmap: 30
+bitmap: 70
+bitmap: 70
+bitmap: 70
+bitmap: 70
+bitmap: 64
+bitmap: 66
+bitmap: 64
+bitmap: 68
+bitmap: 72
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 70
+bitmap: 62
+bitmap: 72
+bitmap: 64
+bitmap: 72
+bitmap: 66
+bitmap: 62
+bitmap: 70
+bitmap: 74
+bitmap: 64
+bitmap: 68
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 72
+bitmap: 68
+bitmap: 32
+bitmap: 68
+bitmap: 70
+bitmap: 62
+bitmap: 70
+bitmap: 68
+bitmap: 66
+bitmap: 62
+bitmap: 36
+bitmap: 60
+bitmap: 66
+bitmap: 66
+bitmap: 66
+bitmap: 64
+bitmap: 70
+bitmap: 68
+bitmap: 62
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 66
+bitmap: 66
+bitmap: 70
+bitmap: 66
+bitmap: 70
+bitmap: 78
+bitmap: 74
+bitmap: 62
+bitmap: 72
+bitmap: 68
+bitmap: 68
+bitmap: 68
+bitmap: 56
+bitmap: 66
+bitmap: 72
+bitmap: 68
+bitmap: 68
+bitmap: 66
+bitmap: 64
+bitmap: 64
+bitmap: 70
+bitmap: 64
+bitmap: 70
+bitmap: 66
+bitmap: 68
+bitmap: 72
+bitmap: 66
+bitmap: 66
+bitmap: 66
+bitmap: 68
+bitmap: 66
+bitmap: 32
+bitmap: 88
+bitmap: 92
+bitmap: 84
+bitmap: 92
+bitmap: 86
+bitmap: 86
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 90
+bitmap: 86
+bitmap: 92
+bitmap: 86
+bitmap: 86
+bitmap: 90
+bitmap: 90
+bitmap: 94
+bitmap: 90
+bitmap: 86
+bitmap: 86
+bitmap: 42
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 32
+bitmap: 90
+bitmap: 88
+bitmap: 88
+bitmap: 126
+bitmap: 84
+bitmap: 92
+bitmap: 28
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 88
+bitmap: 226
+bitmap: 88
+bitmap: 90
+bitmap: 88
+bitmap: 84
+bitmap: 88
+bitmap: 82
+bitmap: 88
+bitmap: 92
+bitmap: 88
+bitmap: 84
+bitmap: 84
+bitmap: 82
+bitmap: 84
+bitmap: 86
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 84
+bitmap: 86
+bitmap: 84
+bitmap: 82
+bitmap: 88
+bitmap: 82
+bitmap: 90
+bitmap: 92
+bitmap: 86
+bitmap: 86
+bitmap: 88
+bitmap: 90
+bitmap: 86
+bitmap: 88
+bitmap: 92
+bitmap: 88
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 90
+bitmap: 90
+bitmap: 92
+bitmap: 90
+bitmap: 92
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 92
+bitmap: 90
+bitmap: 92
+bitmap: 92
+bitmap: 82
+bitmap: 88
+bitmap: 94
+bitmap: 82
+bitmap: 88
+bitmap: 84
+bitmap: 86
+bitmap: 82
+bitmap: 88
+bitmap: 92
+bitmap: 88
+bitmap: 80
+bitmap: 86
+bitmap: 90
+bitmap: 88
+bitmap: 86
+bitmap: 92
+bitmap: 90
+bitmap: 84
+bitmap: 86
+bitmap: 82
+bitmap: 84
+bitmap: 88
+bitmap: 86
+bitmap: 84
+bitmap: 90
+bitmap: 94
+bitmap: 92
+bitmap: 92
+bitmap: 86
+bitmap: 90
+bitmap: 88
+bitmap: 92
+bitmap: 86
+bitmap: 88
+bitmap: 92
+bitmap: 84
+bitmap: 86
+bitmap: 86
+bitmap: 90
+bitmap: 86
+bitmap: 84
+bitmap: 32
+bitmap: 94
+bitmap: 90
+bitmap: 82
+bitmap: 86
+bitmap: 90
+bitmap: 88
+bitmap: 84
+bitmap: 86
+bitmap: 32
+bitmap: 86
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 86
+bitmap: 88
+bitmap: 84
+bitmap: 90
+bitmap: 90
+bitmap: 30
+bitmap: 84
+bitmap: 90
+bitmap: 84
+bitmap: 90
+bitmap: 88
+bitmap: 84
+bitmap: 80
+bitmap: 88
+bitmap: 92
+bitmap: 102
+bitmap: 84
+bitmap: 86
+bitmap: 88
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 80
+bitmap: 110
+bitmap: 86
+bitmap: 90
+bitmap: 92
+bitmap: 90
+bitmap: 86
+bitmap: 84
+bitmap: 90
+bitmap: 118
+bitmap: 82
+bitmap: 86
+bitmap: 88
+bitmap: 90
+bitmap: 74
+bitmap: 96
+bitmap: 86
+bitmap: 90
+bitmap: 88
+bitmap: 94
+bitmap: 88
+bitmap: 86
+bitmap: 92
+bitmap: 90
+bitmap: 84
+bitmap: 86
+bitmap: 92
+bitmap: 92
+bitmap: 92
+bitmap: 92
+bitmap: 92
+bitmap: 90
+bitmap: 86
+bitmap: 32
+bitmap: 86
+bitmap: 90
+bitmap: 92
+bitmap: 90
+bitmap: 86
+bitmap: 90
+bitmap: 82
+bitmap: 88
+bitmap: 84
+bitmap: 88
+bitmap: 84
+bitmap: 88
+bitmap: 88
+bitmap: 34
+bitmap: 88
+bitmap: 94
+bitmap: 90
+bitmap: 86
+bitmap: 84
+bitmap: 92
+bitmap: 88
+bitmap: 86
+bitmap: 86
+bitmap: 86
+bitmap: 86
+bitmap: 82
+bitmap: 88
+bitmap: 88
+bitmap: 88
+bitmap: 92
+bitmap: 88
+bitmap: 88
+bitmap: 84
+bitmap: 86
+bitmap: 84
+bitmap: 84
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 92
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 92
+bitmap: 92
+bitmap: 32
+bitmap: 82
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 84
+bitmap: 88
+bitmap: 88
+bitmap: 72
+bitmap: 86
+bitmap: 86
+bitmap: 90
+bitmap: 88
+bitmap: 84
+bitmap: 86
+bitmap: 86
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 86
+bitmap: 94
+bitmap: 88
+bitmap: 86
+bitmap: 90
+bitmap: 86
+bitmap: 88
+bitmap: 92
+bitmap: 82
+bitmap: 92
+bitmap: 82
+bitmap: 86
+bitmap: 90
+bitmap: 88
+bitmap: 90
+bitmap: 30
+bitmap: 88
+bitmap: 90
+bitmap: 86
+bitmap: 94
+bitmap: 82
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 92
+bitmap: 88
+bitmap: 86
+bitmap: 92
+bitmap: 92
+bitmap: 92
+bitmap: 88
+bitmap: 88
+bitmap: 92
+bitmap: 88
+bitmap: 84
+bitmap: 84
+bitmap: 30
+bitmap: 88
+bitmap: 90
+bitmap: 86
+bitmap: 88
+bitmap: 86
+bitmap: 90
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 82
+bitmap: 86
+bitmap: 86
+bitmap: 90
+bitmap: 92
+bitmap: 90
+bitmap: 86
+bitmap: 88
+bitmap: 84
+bitmap: 84
+bitmap: 86
+bitmap: 88
+bitmap: 94
+bitmap: 88
+bitmap: 68
+bitmap: 92
+bitmap: 90
+bitmap: 90
+bitmap: 88
+bitmap: 88
+bitmap: 92
+bitmap: 82
+bitmap: 90
+bitmap: 88
+bitmap: 86
+bitmap: 84
+bitmap: 86
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 92
+bitmap: 80
+bitmap: 84
+bitmap: 90
+bitmap: 90
+bitmap: 88
+bitmap: 90
+bitmap: 88
+bitmap: 88
+bitmap: 84
+bitmap: 86
+bitmap: 88
+bitmap: 90
+bitmap: 90
+bitmap: 92
+bitmap: 82
+bitmap: 86
+bitmap: 86
+bitmap: 86
+bitmap: 88
+bitmap: 92
+bitmap: 88
+bitmap: 32
+bitmap: 86
+bitmap: 92
+bitmap: 92
+bitmap: 90
+bitmap: 84
+bitmap: 86
+bitmap: 90
+bitmap: 96
+bitmap: 84
+bitmap: 120
+bitmap: 88
+bitmap: 92
+bitmap: 86
+bitmap: 88
+bitmap: 88
+bitmap: 84
+bitmap: 88
+bitmap: 104
+bitmap: 86
+bitmap: 82
+bitmap: 90
+bitmap: 92
+bitmap: 88
+bitmap: 88
+bitmap: 84
+bitmap: 110
+bitmap: 88
+bitmap: 90
+bitmap: 92
+bitmap: 94
+bitmap: 90
+bitmap: 90
+bitmap: 84
+bitmap: 88
+bitmap: 120
+bitmap: 98
+bitmap: 114
+bitmap: 82
+bitmap: 84
+bitmap: 84
+bitmap: 86
+bitmap: 92
+bitmap: 88
+bitmap: 90
+bitmap: 84
+bitmap: 92
+bitmap: 84
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 84
+bitmap: 88
+bitmap: 82
+bitmap: 88
+bitmap: 96
+bitmap: 96
+bitmap: 86
+bitmap: 88
+bitmap: 94
+bitmap: 88
+bitmap: 86
+bitmap: 84
+bitmap: 88
+bitmap: 82
+bitmap: 90
+bitmap: 84
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 90
+bitmap: 90
+bitmap: 92
+bitmap: 90
+bitmap: 106
+bitmap: 88
+bitmap: 90
+bitmap: 84
+bitmap: 92
+bitmap: 88
+bitmap: 32
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 86
+bitmap: 82
+bitmap: 84
+bitmap: 88
+bitmap: 84
+bitmap: 88
+bitmap: 94
+bitmap: 86
+bitmap: 90
+bitmap: 86
+bitmap: 34
+bitmap: 92
+bitmap: 92
+bitmap: 86
+bitmap: 92
+bitmap: 88
+bitmap: 90
+bitmap: 94
+bitmap: 82
+bitmap: 86
+bitmap: 90
+bitmap: 86
+bitmap: 92
+bitmap: 88
+bitmap: 86
+bitmap: 88
+bitmap: 96
+bitmap: 88
+bitmap: 88
+bitmap: 88
+bitmap: 86
+bitmap: 98
+bitmap: 90
+bitmap: 90

@@ -1,8 +1,5 @@
-rbtree res len:1000;1000
-rbtree remove mean:34.944
-rbtree insert mean:76.34
-rbtree remove std:19.7417983629
-rbtree insert std:36.5461355005
-rbtree 99% remove overhead:110
-rbtree 99% insert overhead:176
+rbtree res len:1000
+rbtree remove mean:112.226
+rbtree remove std:39.2004285384
+rbtree 99% remove overhead:220
 -----------------------------------
