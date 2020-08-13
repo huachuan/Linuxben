@@ -1,7 +1,7 @@
 rbtree: res len:1000
-rbtree: s_overhead mean:79.782
-rbtree: s_overhead std:33.6817299873
-rbtree: 99% remove overhead:96
-rbtree: 99% insert overhead:124
-rbtree: 99% s_overhead overhead:190
+rbtree: s_overhead mean:80.85
+rbtree: s_overhead std:31.9916389853
+rbtree: 99% remove overhead:82
+rbtree: 99% insert overhead:122
+rbtree: 99% s_overhead overhead:188
 -----------------------------------

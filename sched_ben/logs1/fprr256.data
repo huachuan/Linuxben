@@ -1,7 +1,7 @@
 fprr: res len:1000
-fprr: s_overhead mean:33.826
-fprr: s_overhead std:8.2404872204
-fprr: 99% remove overhead:44
-fprr: 99% insert overhead:16
-fprr: 99% s_overhead overhead:60
+fprr: s_overhead mean:36.568
+fprr: s_overhead std:8.957992053
+fprr: 99% remove overhead:58
+fprr: 99% insert overhead:18
+fprr: 99% s_overhead overhead:74
 -----------------------------------

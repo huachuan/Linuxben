@@ -1,0 +1,7 @@
+bitmap: res len:1000
+bitmap: s_overhead mean:49.478
+bitmap: s_overhead std:12.6739158962
+bitmap: 99% remove overhead:50
+bitmap: 99% insert overhead:50
+bitmap: 99% s_overhead overhead:84
+-----------------------------------
